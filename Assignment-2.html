@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assignment-2.css">
+    <title>Stock Market Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="Header">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo" style="max-width:100px">
+        </div> 
+        <nav>
+            <ul>
+                <li><a href="#">Live Feed</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><button>Login</button></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-start">
+        <h1 style="font-size: 60px;font-weight: bold;">Welcome To Stock Market</h1>
+        <h2 style="max-width: 750px; text-align: center;">Compare and Buy or Sell the Best Stocks at the Best Possible Price from Different Websites in One Place</h2>
+    </div>
+
+    <div class="container">
+        <div id="gainersTableContainer">
+            <h3 style="color: black;">Top Gainers</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Current Price (INR)</th>
+                        <th>Change (%)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="gainersBody"></tbody>
+            </table>
+        </div>
+
+        <div id="losersTableContainer">
+            <h3 style="color: black;">Top Losers</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Current Price (INR)</th>
+                        <th>Change (%)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="losersBody"></tbody>
+            </table>
+        </div>
+        <div id="combinedTableContainer">
+            <h3 style="color: black;">Combined Gainers and Losers</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Current Price (INR)</th>
+                        <th>Change (%)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="combinedBody"></tbody>
+            </table>
+        </div>
+
+        <div>
+            <h3 style="color: black;">Your Portfolio</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Quantity</th>
+                        <th>Average Buy Price (INR)</th>
+                    </tr>
+                </thead>
+                <tbody id="portfolioBody">
+                    <tr>
+                        <td>ABC</td>
+                        <td>10</td>
+                        <td>₹1400.00</td>
+                    </tr>
+                    <tr>
+                        <td>PQR</td>
+                        <td>5</td>
+                        <td>₹900.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="Assignment-2.js"></script>
+</body>
+</html>
